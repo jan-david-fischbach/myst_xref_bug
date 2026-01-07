@@ -1,4 +1,5 @@
 ---
+title: SideBySide output to typst
 abstract: A small demo embedding external content via xref. The content should be present in web and pdf exports, however it appears only in web.
 exports:
   - format: pdf
@@ -16,20 +17,28 @@ downloads:
     title: A latex-PDF of this document
   - id: typst-export
     title: A typst-PDF of this document
+
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
 ---
 
-# BUG REPORT: embedding external content via xrefs
 
-## Directly with the inline `![](xref:)` syntax
-![](xref:mystguide#img:altair-horsepower)
+:::: {figure}
+:::{embed} #plt:sine
+:remove-output: false
+:remove-input: false
+:::
 
-## Passing the reference to the figure directive
-```{figure} xref:mystguide#img:mpl
-A matplotlib image of the cars data from the myst guide
-```
+This is a figure caption for embedded content.
+::::
 
-## Same for Internal Reference
+:::{code-cell} python
+:caption: A code-cell generating a sine plot
 
-```{figure} #plt:sine
-This is a sine wave, from a different document in the same project
-```
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0, 8 * np.pi, 100)
+y = np.sin(x)
+_ = plt.plot(x, y)
+:::
