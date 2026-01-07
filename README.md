@@ -33,26 +33,3 @@ A matplotlib image of the cars data from the myst guide
 ```{figure} #plt:sine
 This is a sine wave, from a different document in the same project
 ```
-
-
-## Separate Issue: Experimentation with wrapping embed in figure
-leads to typst error
-
-:::: {figure}
-:::{embed} #plt:sine
-:remove-output: false
-:remove-input: false
-:::
-
-This is a figure caption for embedded content.
-::::
-
-:::{code-cell} python
-:caption: A code-cell generating a sine plot
-
-import numpy as np
-import matplotlib.pyplot as plt
-x = np.linspace(0, 8 * np.pi, 100)
-y = np.sin(x)
-_ = plt.plot(x, y)
-:::
