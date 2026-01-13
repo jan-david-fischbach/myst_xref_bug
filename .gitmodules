@@ -1,0 +1,3 @@
+[submodule "typst-template"]
+	path = typst-template
+	url = git@github.com:myst-templates/lapreprint-typst.git
