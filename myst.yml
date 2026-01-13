@@ -17,6 +17,9 @@ project:
     - file: README.md
     - file: sine_wave.ipynb
     - file: side_by_side.md
+
+  plugins:
+    - sbs_plugin/plugin.mjs
    
 site:
   template: book-theme

@@ -50,6 +50,10 @@ y = np.sin(x)
 _ = plt.plot(x, y)
 ::: -->
 
+::::{side-by-side} #plt:sine
+Caption text goes here
+::::
+
 ## just card with embed
 
 ::::{card} Code
