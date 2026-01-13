@@ -1,3 +1,6 @@
 [submodule "typst-template"]
 	path = typst-template
 	url = git@github.com:myst-templates/lapreprint-typst.git
+[submodule "sbs_plugin"]
+	path = sbs_plugin
+	url = git@github.com:jan-david-fischbach/myst_side_by_side.git
