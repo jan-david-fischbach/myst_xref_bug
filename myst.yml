@@ -19,7 +19,8 @@ project:
     - file: side_by_side.md
 
   plugins:
-    - sbs_plugin/plugin.mjs
+    # - sbs_plugin/plugin.mjs
+    - https://raw.githubusercontent.com/jan-david-fischbach/myst_side_by_side/refs/heads/main/plugin.mjs
    
 site:
   template: book-theme

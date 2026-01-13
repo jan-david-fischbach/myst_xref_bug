@@ -54,6 +54,10 @@ _ = plt.plot(x, y)
 Caption text goes here
 ::::
 
+::::{side-by-side} #plt:cosine
+Some longer bit of code
+::::
+
 ## just card with embed
 
 ::::{card} Code
